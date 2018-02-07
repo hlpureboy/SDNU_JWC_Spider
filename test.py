@@ -57,10 +57,10 @@ s.parserhtml(html)
 http://{}/xf_xsqxxxk.aspx?xh={}&xm={}&gnmkdm=N121101".format({},xh,urllib.quote_plus(xm.encode('gbk')))
 '''
 
-url="http://{}/ xf_xsqxxxk.aspx?xh={}&xm={}&gnmkdm=N121101".format("{}",xh,urllib.quote_plus(xm.encode('gbk')))
-# c=catchLesson(url,cookies)
-# c.getvalues()
-# c.postacqurievalues()
-# flag=c.postvalues()
-# while not flag:
-#     flag=c.postvalues()
+url="http://{}/xf_xsqxxxk.aspx?xh={}&xm={}&gnmkdm=N121101".format("{}",xh,urllib.quote_plus(xm.encode('gbk')))
+c=catchLesson(url,cookies,xh)
+c.getvalues()
+c.postacqurievalues()
+flag=c.postvalues()
+while not flag:
+    flag=c.postvalues()

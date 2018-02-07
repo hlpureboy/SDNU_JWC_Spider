@@ -18,3 +18,5 @@ https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=33179
 
 ​	2.关于训练集只能在python 32位环境下运行，如果64位请参照论坛中的讲解自行训练，或者直接下载附件
 
+​	3.修改一些细小的bug
+

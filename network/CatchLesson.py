@@ -8,7 +8,7 @@ class catchLesson(config):
     '''
     抢课类：只能抢任选课,类型自行修改
     '''
-    def __init__(self,url,cookies):
+    def __init__(self,url,cookies,xh):
         self.url=url
         self.session=requests.session()
         self.session.cookies=cookies
@@ -41,6 +41,7 @@ class catchLesson(config):
             "Button2": u'确定'.encode('gbk')
         }
         super(catchLesson,self).__init__(url)
+        self.headers['Referer']="http://{}/xscj.aspx?xh={}".format(self.ip,xh)
     def parserhtml(self,html):
         suop=BS(html,'html.parser',from_encoding='gbk')
         #print(html.decode('gbk'))
